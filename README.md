@@ -5,7 +5,7 @@ Practica sobre el inicio de sesión de Instagram. Esto implicó trabajar en la i
 - Jetpack Compose
 - Clean Arquitecture
 - Inyeccion de dependencias Dagger Hilt
-- patron de diseño Singleton
+- Patron de Diseño Singleton
 
 <br>
 <img src="https://github.com/ivette2021/LoginIG/blob/master/Presentacion%20de%20la%20app%20sin%20anotaciones.jpg">
