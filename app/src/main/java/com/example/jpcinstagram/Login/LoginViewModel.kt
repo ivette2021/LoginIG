@@ -7,11 +7,14 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.jpcinstagram.Login.domain.LoginUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class LoginViewModel : ViewModel() {
+@HiltViewModel //preparamos el viewmodel para ser inyectado en el activity , pero hasta este punto no puede recibir nada
+class LoginViewModel @Inject constructor(private val loginUseCase: LoginUseCase) : ViewModel() {//ahora esta preparado para recibir
 
-    val loginUseCase = LoginUseCase() //creando una instancia
+    //val loginUseCase = LoginUseCase() //creando una instancia
 
     private val _email = MutableLiveData<String>()
     val email: LiveData<String> = _email
